@@ -8,8 +8,7 @@ from duckduckgo_search import DDGS
 CHAVE_DA_IA = st.secrets["GEMINI_API_KEY"]
 
 genai.configure(api_key=CHAVE_DA_IA)
-model = genai.GenerativeModel('gemini-1.5-flash')
-
+model = genai.GenerativeModel('gemini-2.0-flash
 def buscar_imagem_online(termo_da_peca):
     try:
         with DDGS() as ddgs:
